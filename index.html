@@ -4,43 +4,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<title>ポートフォーリオ|https://ikunori-nakagawa.github.io/</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
 		<a href="#" class="logo">Portfolio</a>
-		<div class="toggle"></div>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Testimonial</a></li>
-			<li><a href="#">Contact</a></li>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="menu">
+			<li><a href="#home" onclick="toggleMenu();">Home</a></li>
+			<li><a href="#about" onclick="toggleMenu();">About</a></li>
+			<li><a href="#services" onclick="toggleMenu();">Services</a></li>
+			<li><a href="#work" onclick="toggleMenu();">Work</a></li>
+			<li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li>
+			<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 		</ul>
 	</header>
-	<section class="banner">
+	<section class="banner" id="home">
 		<div class="textBx">
 			<h2>ポートフォーリオ</h2>
-			<h3>随時更新</h3>
-			<a href="#" class="btn">About me</a>
+			<h3>随時更新 SINCE 2020/12/02</h3>
+			<a href="#about" class="btn">About me</a>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="heading">
 			<h2>About me</h2>
 		</div>
 		<div class="content">
 			<div class="contentBx w50">
 				<h3>随時更新</h3>
-				<p>Text...text</p>
+				<p>SINCE 2020/12/02</p>
 			</div>
 			<div class="w50">
 				<img src="./img/img1.jpg" class="img">
 			</div>
 		</div>
 	</section>
-	<section class="services">
+
+	<section class="services" id="services">
 		<div class="heading white">
 			<h2>Our Services</h2>
 			<p>Text...text</p>
@@ -78,7 +80,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="work">
+
+	<section class="work" id="work">
 		<div class="heading">
 			<h2>Our Latest Work</h2>
 			<p>Text...text</p>
@@ -101,31 +104,89 @@
 			<a href="#" class="btn">View More</a>
 		</div>
 	</section>
-	<section class="testimonial">
+
+	<section class="testimonial" id="testimonial">
 		<div class="heading">
 			<h2>Testimonial</h2>
 			<p>Text...text</p>
 		</div>
 		<div class="content">
 			<div class="testimonialBx">
-				<p>Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...</p>
+				<p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
 				<h3>Someone Famous<br><span>Creative Designer</span></h3>
 			</div>
 			<div class="testimonialBx">
-				<p>Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...Text...text...</p>
+				<p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
 				<h3>Someone Famous<br><span>Creative Designer</span></h3>
 			</div>
 		</div>
 	</section>
 
-
-	24:05
+	<section class="contact" id="contact">
+		<div class="heading white">
+			<h2>Contact us</h2>
+			<p>Text...text</p>
+		</div>
+		<div class="content">
+			<div class="contactInfo">
+				<h3>Contact Info</h3>
+				<div class="contactInfoBx">
+					<div class="box">
+						<div class="icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="text">
+							<h3>Address</h3>
+							<p>tokyo</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon">
+							<i class="fa fa-phone"></i>
+						</div>
+						<div class="text">
+							<h3>Phone</h3>
+							<p>xxx-xxxx-xxxx</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon">
+							<i class="fa fa-envelope-o"></i>
+						</div>
+						<div class="text">
+							<h3>E-mail</h3>
+							<p>xxx@xxx.xxx</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="formBx">
+				<form>
+					<h3>Message Me</h3>
+					<input type="text" name="" placeholder="Full Name">
+					<input type="emali" name="" placeholder="Email">
+					<textarea placeholder="Your Message"></textarea>
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+	</section>
+	<div class="copyright">
+		<p>copyright &copy; 2020.</p>
+	</div>
 	<!-- ヘッダー透過処理 -->
 	<script type="text/javascript">
 		window.addEventListener('scroll', function(){
 			var header = document.querySelector('header');
 			header.classList.toggle('sticky', window.scrollY > 0);
 		});
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var menu = document.querySelector('.menu');
+			menuToggle.classList.toggle('active');
+			menu.classList.toggle('active');
+		}
 	</script>
 </body>
 </html>
