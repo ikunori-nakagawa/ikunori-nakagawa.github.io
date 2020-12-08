@@ -18,7 +18,15 @@ section{
 	background-position: right;
 	display: flex;
 	justify-content:space-between;
-	align-items: center;
+}
+.banner .textBx{
+	margin-top: 60px;
+}
+.textBx ul li{
+	color: #fff;
+	margin: 5px 10px;
+	font-size: 14px;
+	list-style: none;
 }
 .banner h2{
 	font-size: 3em;
@@ -111,6 +119,10 @@ header.sticky ul li a{
 .contentBx{
 	padding-right: 30px;
 }
+.contentBx dl dd{
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
 .contentBx h3{
 	font-size: 24px;
 	margin-bottom: 10px; 
@@ -137,6 +149,7 @@ img{
 	padding: 40px 20px;
 	background: #222;
 	color: #fff;
+	min-width: 320px;
 	max-width: 340px;
 	margin: 20px;
 	text-align: center;
@@ -341,6 +354,9 @@ img{
 	}
 	.banner h3{
 		font-size: 1em;
+	}
+	.banner .textBx{
+		margin-top: -50px;
 	}
 	.btn{
 		margin-top: 10px;
