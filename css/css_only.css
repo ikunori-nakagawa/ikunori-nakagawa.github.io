@@ -9,6 +9,7 @@ article{
 figure{
     position: relative;
     max-height: 210px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -31,6 +32,7 @@ dl{
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    margin: 0;
 }
 dl::before, dl::after{
     position: absolute;
@@ -50,7 +52,7 @@ dl::after{
 }
 dl dt{
     position: absolute;
-    top: -10px;
+    top: -15px;
     font-size: 26px;
     display: flex;
     align-items: center;
