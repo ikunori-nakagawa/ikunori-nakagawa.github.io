@@ -58,6 +58,7 @@ dl dt{
 dl dd{
     height: 183px;
     font-size: 70px;
+    margin: 0;
     padding: 10px 0 15px;
     display: flex;
     align-items: center;
