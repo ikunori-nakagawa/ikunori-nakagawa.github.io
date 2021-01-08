@@ -22,12 +22,12 @@ figure::after{
     height: 15px;
     box-sizing: border-box;
     bottom: 0;
-    border-top: 2px solid #1f2273;
-    border-bottom: 8px solid #1f2273;
+    border-top: 2px solid #2c32b5;
+    border-bottom: 8px solid #2c32b5;
 }
 dl{
     width: 100%;
-    color: #1f2273;
+    color: #2c32b5;
     position: relative;
     display: flex;
     flex-flow: wrap;
@@ -41,8 +41,8 @@ dl::before, dl::after{
     height: 15px;
     box-sizing: border-box;
     top: -5px;
-    border-top: 8px solid #1f2273;
-    border-bottom: 2px solid #1f2273;
+    border-top: 8px solid #2c32b5;
+    border-bottom: 2px solid #2c32b5;
 }
 dl::before{
     left: 0;
