@@ -6,6 +6,7 @@
 	<title>ポートフォーリオ|https://ikunori-nakagawa.github.io/</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -25,6 +26,7 @@
 			<h2>ポートフォーリオ</h2>
 			<h3>随時更新</h3>
 			<ul>
+				<li>2021/1/20:&nbsp;workにクリックイベントを追加</li>
 				<li>2021/1/14:&nbsp;画像及び、テキストの更新、最低限の情報を追加</li>
 				<li>2021/1/8:&nbsp;<a href="css_only.html">CSSだけで作成したコンテンツガイド</a>（サンプル）の公開</li>
 				<li>2020/12/7:&nbsp;各種画像差し替え</li>
@@ -105,15 +107,35 @@
 		<div class="content">
 			<div class="workBx">
 				<img src="./img/product4.jpg">
+				<dl>
+					<dt>One Tap BUY</dt>
+					<dd>オンライン証券企業のコーポレートサイトの保守運用</dd>
+					<dd>分業制によりコーディング部分を担当</dd>
+				</dl>
 			</div>
 			<div class="workBx">
 				<img src="./img/product1.jpg">
+				<dl>
+					<dt>RICOH</dt>
+					<dd>精密機器メーカーの運用、リニューアル作業</dd>
+					<dd>プレーンなHTMLからCMSへの乗せ換え、既存ページの運用担当</dd>
+				</dl>
 			</div>
 			<div class="workBx">
 				<img src="./img/product3.jpg">
+				<dl>
+					<dt>livedoor　News</dt>
+					<dd>ニュースサイトの保守運用担当</dd>
+					<dd>新規コンテンツ（LP）等の作成</dd>
+				</dl>
 			</div>
 			<div class="workBx">
 				<img src="./img/product2.jpg">
+				<dl>
+					<dt>EPARK</dt>
+					<dd>総合ジャンル型ポータルの保守運用</dd>
+					<dd>各施設/店舗単位のカスタムレイアウト作業担当</dd>
+				</dl>
 			</div>
 		</div>
 		<div class="heading">
@@ -204,6 +226,12 @@
 			menuToggle.classList.toggle('active');
 			menu.classList.toggle('active');
 		}
+	</script>
+	<!-- オンマウス -->
+	<script>
+		$(".workBx").click(function(){
+  			$(this).find('dl').toggleClass("clicked");
+		});
 	</script>
 </body>
 </html>
