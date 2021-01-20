@@ -190,10 +190,13 @@ img{
 	top: 0;
 	background-color: darkgrey;
 	opacity: 0;
+	padding: 100px 50px;
+	transition: 0.5s;
 }
 .clicked{
 	opacity: 0.9 !important;
 	padding: 100px 50px;
+	transition: 0.5s;
 }
 
 .work .content .workBx dl dt,
