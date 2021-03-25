@@ -8,23 +8,9 @@
 </head>
 <body>
     <div id="app">
-        <p>マウスカーソルの位置:{{point.x}}, {{point.y}}</p>
+        <p>ご希望到着日:{{arrival_date}}</p>
+        <input type="date" v-model="arrival_date" v-bind:min="min_date">
 
-<!--
-        ウィンドウの横幅:{{width}}<br>
-        ウィンドウの高さ:{{height}}
--->
-<!--    Vue
-        <template v-if="stock >= 1">
-            <span class="num">残り{{stock}}個</span>
-            <button class="btn" v-on:click="onDeleteItem">削除</button>
-        </template>
-        <template v-else>在庫切れ</template>
--->
-<!--
-            <span class="num"></span>
-        <button class="btn">削除</button>
--->
     </div>
     <script src="vue.js"></script>
     <script src="main.js"></script>
